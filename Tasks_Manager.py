@@ -9,7 +9,7 @@ class task_manager:
         
     def search_task(self, input_search):
         for i in self.tasks:
-            if i.name==input_search:
+            if i.name.lower()==input_search:
               return {"Task name" :i.name,
                       "Due Date":i.due_date,
                       "task priority":i.priority}

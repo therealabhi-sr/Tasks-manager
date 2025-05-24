@@ -23,7 +23,8 @@ def main():
     
         elif choice=='3':
             search_input=input("Enter Task name to search : ")
-            result = manager.search_task(search_input)
+            input_search=search_input.lower()
+            result = manager.search_task(input_search)
             print(result)
     
         else :
