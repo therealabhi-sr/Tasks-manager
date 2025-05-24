@@ -7,9 +7,9 @@ class task:
     
     def mark_done(self):
         self.done=True
+    
         
-        
-        
+               
 
 class personal_task(task):
     def __init__(self,name,due_date,priority="medium"):

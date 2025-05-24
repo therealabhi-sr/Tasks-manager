@@ -6,3 +6,14 @@ class task_manager:
         
     def add_task(self,task):
         self.tasks.append(task)
+        
+    def search_task(self, input_search):
+        for i in self.tasks:
+            if i.name==input_search:
+              return {"Task name" :i.name,
+                      "Due Date":i.due_date,
+                      "task priority":i.priority}
+            
+            
+
+        
