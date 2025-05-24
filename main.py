@@ -28,10 +28,12 @@ def main():
             print(result)
         
         elif choice=="4":
-            input_date=input("Enter Date as dd-mm-yyyy")
+            input_date=input("Enter Date as dd-mm-yyyy : ")
             result=manager.view_tasks_by_date(input_date)
-            print(result)
-            
+            print(f"Personal task for {input_date}\n")
+            print(result['PERSONAL'])
+            print(f"Professional task for {input_date}\n")
+            print(result['WORK'])
             
         else :
             print("Invalid choice!")

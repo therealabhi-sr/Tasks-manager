@@ -22,10 +22,11 @@ class task_manager:
                 personal.append(i.name)
             elif(i.due_date==input_date and i.priority=="High" ):
                 work.append(i.name)  
-        return {
-            "PEROSNAL":personal,
+        return{
+            "PERSONAL":personal,
             "WORK":work
-        }              
+        }  
+                   
                 
                 
         
