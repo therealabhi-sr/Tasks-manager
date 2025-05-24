@@ -5,7 +5,7 @@ def main():
     manager=task_manager()
     
     while True: 
-        print("1.Add Personal tasks\n2.Add Work task\n3.Search for a task by name\n4.EXIT")
+        print("1.Add Personal tasks\n2.Add Work task\n3.Search for a task by name\n4.Show Tasks By Date ")
     
         choice=input("Select Option : ")
         print(choice)
@@ -26,7 +26,13 @@ def main():
             input_search=search_input.lower()
             result = manager.search_task(input_search)
             print(result)
-    
+        
+        elif choice=="4":
+            input_date=input("Enter Date as dd-mm-yyyy")
+            result=manager.view_tasks_by_date(input_date)
+            print(result)
+            
+            
         else :
             print("Invalid choice!")
     
